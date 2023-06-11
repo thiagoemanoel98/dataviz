@@ -5,7 +5,7 @@ interface ILegendProps {
 }
 
 export const Container = styled.div`
-  width: 48%;
+  width: 100%;
   min-height: 260px;
   margin: 10px 0;
   background-color: ${(props) => props.theme.colors.tertiary};
@@ -25,7 +25,6 @@ export const Container = styled.div`
 `;
 
 export const SideLeft = styled.aside`
-  flex: 1;
 
   padding: 30px 20px;
 
@@ -37,7 +36,7 @@ export const SideLeft = styled.aside`
 
 export const LegendContainer = styled.ul`
   list-style: none;
-  height: 175px;
+  height: 190px;
   padding-right: 15px;
   overflow-y: scroll;
 

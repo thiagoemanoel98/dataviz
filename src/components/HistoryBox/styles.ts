@@ -34,7 +34,7 @@ export const Container = styled.div`
 `;
 
 export const ChartContainer = styled.div`
-  height: 260px;
+  height: 360px;
 `;
 
 export const Header = styled.header`

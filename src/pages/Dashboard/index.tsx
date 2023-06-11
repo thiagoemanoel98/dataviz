@@ -20,6 +20,7 @@ import BarChartBox from "../../components/BarChartBox";
 import { brazilTaxBurden } from "../../repositories/taxBurden";
 import MultipleHistoryBox from "../../components/MultipleHistoryBox";
 import { inflationData } from "../../repositories/inflation";
+import { internacionalData } from "../../repositories/internacionalDolar";
 
 const Dashboard: React.FC = () => {
   const [monthSelected, setMonthSelected] = useState(new Date().getMonth() + 1);
@@ -293,20 +294,16 @@ const Dashboard: React.FC = () => {
         />
 
         <MultipleHistoryBox
-          title="Carga Tributária Brasil"
+          title="Inflação Brasil x EUA x Noruega"
           data={inflationData}
-          lineColor1={"#563959"}
-          lineColor2={"#F24B59"}
-          lineColor3={"#F7931B"}
+          lineColor1={"#4E41F0"}
+          lineColor2={"#F7931B"}
+          lineColor3={"#E44C4E"}
         />
 
         <BarChartBox
-          title={"Saídas"}
-          data={relationExpensevesRecurrentVersusEventual}
-        />
-        <BarChartBox
-          title={"Entradas"}
-          data={relationGainsRecurrentVersusEventual}
+          title={"Dólar Internacional (Int$)"}
+          data={internacionalData}
         />
       </S.Content>
     </S.Container>

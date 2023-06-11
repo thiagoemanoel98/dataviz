@@ -35,13 +35,17 @@ const MultipleHistoryBox: React.FC<IHistoryBoxProps> = ({
 
       <S.LegendContainer>
         <S.Legend color={lineColor1}>
-          <div>20%</div>
-          <span>Entradas</span>
+          <div></div>
+          <span>EUA</span>
         </S.Legend>
 
         <S.Legend color={lineColor2}>
-          <div>30%</div>
-          <span>Saídas</span>
+          <div></div>
+          <span>Brasil</span>
+        </S.Legend>
+        <S.Legend color={lineColor3}>
+          <div></div>
+          <span>Noruega</span>
         </S.Legend>
       </S.LegendContainer>
     </S.Header>
