@@ -3,7 +3,6 @@ import React from "react";
 import { ResponsiveContainer, BarChart, Bar, Cell, Tooltip } from "recharts";
 
 import * as S from "./styles";
-import formatCurrency from "../../utils/formatCurrency";
 
 interface IBarChartProps {
   title: string;

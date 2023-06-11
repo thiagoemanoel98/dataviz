@@ -38,6 +38,7 @@ export const Container = styled.div`
   }
 
   > header p {
+    margin-top:12px;
     font-size: 18px;
   }
 

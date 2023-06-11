@@ -2,8 +2,6 @@ import React from "react";
 
 import * as S from "./styles";
 
-import logoImg from "../../assets/logo.svg";
-
 import {
   MdDashboard,
   MdArrowDownward,
@@ -18,24 +16,13 @@ const Aside: React.FC = () => {
   return (
     <S.Container menuIsOpen={false}>
       <S.Header>
-        <S.LogoImg src={logoImg} alt="Logo MyWallet" />
-        <S.Title>MyWallet</S.Title>
+        <S.Title>DATAVIZ</S.Title>
       </S.Header>
 
       <S.MenuContainer>
         <S.MenuItemLink href="/dashboard">
           <MdDashboard />
           Dashboard
-        </S.MenuItemLink>
-
-        <S.MenuItemLink href="/list/entry-balance">
-          <MdArrowUpward />
-          Entradas
-        </S.MenuItemLink>
-
-        <S.MenuItemLink href="/list/exit-balance">
-          <MdArrowDownward />
-          Saídas
         </S.MenuItemLink>
 
         <S.MenuItemButton onClick={signOut}>

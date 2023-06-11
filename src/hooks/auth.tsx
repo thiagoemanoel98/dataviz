@@ -20,7 +20,7 @@ const AuthProvider: React.FC<Props> = ({ children }) => {
   });
 
   const signIn = (email: string, password: string) => {
-    if (email === "thiago@gmail.com" && password === "123123") {
+    if (email === "user@gmail.com" && password === "123123") {
       localStorage.setItem("@my-wallet::logged", "true");
     } else {
       alert("Senha ou usuário inválidos");
