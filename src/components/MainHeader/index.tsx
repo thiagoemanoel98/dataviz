@@ -31,7 +31,7 @@ const MainHeader: React.FC = () => {
         onChange={handleChangeTheme}
       />
       <S.Profile>
-        <S.Welcome>Olá, {emoji}</S.Welcome>
+        <S.Welcome>Olá {emoji}</S.Welcome>
       </S.Profile>
     </S.Container>
   );

@@ -12,6 +12,7 @@ import { brazilTaxBurden } from "../../repositories/taxBurden";
 import MultipleHistoryBox from "../../components/MultipleHistoryBox";
 import { inflationData } from "../../repositories/inflation";
 import { internacionalData } from "../../repositories/internacionalDolar";
+import { bigMacData } from "../../repositories/bigMacData";
 
 const Dashboard: React.FC = () => {
   return (
@@ -52,6 +53,11 @@ const Dashboard: React.FC = () => {
         <BarChartBox
           title={"Dólar Internacional (Int$)"}
           data={internacionalData}
+        />
+
+        <BarChartBox
+          title={"Valor do Big Mac em dolares"}
+          data={bigMacData}
         />
       </S.Content>
     </S.Container>
